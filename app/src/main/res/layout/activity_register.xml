@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/textradius"
+        android:ems="10"
+        android:hint="Full Name"
+        android:padding="20px"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <EditText
+        android:id="@+id/txtmail"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/textradius"
+        android:hint="E-mail"
+        android:padding="20px"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtname" />
+
+    <EditText
+        android:id="@+id/txtphone"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/textradius"
+        android:hint="Phone"
+        android:padding="20px"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtaddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtmail" />
+
+    <EditText
+        android:id="@+id/txtaddress"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:padding="20px"
+        android:background="@drawable/textradius"
+        android:hint="Address"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtphone" />
+
+    <EditText
+        android:id="@+id/txtpassword"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/textradius"
+        android:hint="Password"
+        android:padding="20px"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtaddress" />
+
+    <EditText
+        android:id="@+id/txtconf"
+        android:layout_width="265dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="53dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/textradius"
+        android:hint="Confirm Password"
+        android:padding="20px"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtpassword" />
+
+    <Button
+        android:id="@+id/buttonn"
+        android:layout_width="108dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="41dp"
+        android:text="Save"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtconf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
